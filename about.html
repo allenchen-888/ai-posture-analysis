@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>关于项目 | About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .about-img { width: 100%; border-radius: 4px; filter: grayscale(20%); }
+        .designer-info { margin-top: 60px; padding: 40px; background: #fff; border: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">体态哲思<span>Posture & Life</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="culture.html">体态文化</a></li>
+                    <li><a href="lifestyle.html">生活方式指南</a></li>
+                    <li><a href="analysis.html">互动分析</a></li>
+                    <li><a href="about.html" class="active">关于项目</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <div class="section-header fade-up">
+            <h2>设计愿景</h2>
+            <p>Design Vision</p>
+        </div>
+
+        <div class="about-grid fade-up">
+            <div>
+                <h3 class="serif" style="margin-bottom: 25px; font-size: 32px; line-height: 1.4;">不仅是网站，<br>更是一场身体美学实验。</h3>
+                <p style="margin-bottom: 20px; color: #555;">
+                    本项目的灵感来源于对周围人群的观察：在地铁上、咖啡馆里、办公桌前，我们的身体总是处于一种被动的、紧绷的、扭曲的状态。
+                </p>
+                <p style="color: #555;">
+                    “体态哲思”试图用最克制的视觉语言，传递最理性的身体知识。我们摒弃了传统医疗网站的恐吓式营销，转而使用艺术与人文的视角，邀请用户重新审视自己与身体的关系。
+                </p>
+            </div>
+            <div>
+                <img src="images/about-bg.jpg" alt="工作室" class="about-img">
+            </div>
+        </div>
+
+        <div class="designer-info fade-up">
+            <h4 style="margin-bottom: 20px;">项目信息</h4>
+            <p><strong>课程名称：</strong>网站策划与设计</p>
+            <p><strong>设计理念：</strong>新古典主义与极简设计的融合</p>
+            <p><strong>开发技术：</strong>HTML5 / CSS3 (Grid & Flexbox) / Vanilla JavaScript</p>
+            <p><strong>团队分工：</strong>策划 / 视觉设计 / 前端开发</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content"><div class="footer-info"><h4>体态哲思</h4></div></div>
+        <div class="copyright">&copy; 2025 Posture & Lifestyle Project.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

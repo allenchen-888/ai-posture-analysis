@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>生活方式指南 | Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">体态哲思<span>Posture & Life</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="culture.html">体态文化</a></li>
+                    <li><a href="lifestyle.html" class="active">生活方式指南</a></li>
+                    <li><a href="analysis.html">互动分析</a></li>
+                    <li><a href="about.html">关于项目</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <div class="section-header fade-up">
+            <h2>身体系统指南</h2>
+            <p>Systematic Body Guide</p>
+        </div>
+
+        <div class="tabs fade-up">
+            <button class="tab-btn active" onclick="openTab(event, 'upper-head')">感知中枢 (头颈)</button>
+            <button class="tab-btn" onclick="openTab(event, 'torso')">动力核心 (躯干)</button>
+            <button class="tab-btn" onclick="openTab(event, 'lower')">根基系统 (下肢)</button>
+        </div>
+
+        <div id="upper-head" class="guide-content active">
+            <div class="problem-grid">
+                <div class="problem-card fade-up">
+                    <div class="problem-header">
+                        <h3>头前引 (Text Neck)</h3>
+                        <span class="tag">现代病</span>
+                    </div>
+                    <p>耳垂位置明显超前于肩峰，通常伴随颈椎曲度变直。</p>
+                    <div class="details">
+                        <div class="detail-block">
+                            <strong>Daily Cause / 日常诱因</strong>
+                            视线长期低于水平线（手机/笔记本电脑），枕头过高。
+                        </div>
+                        <div class="detail-block">
+                            <strong>Correction / 修正建议</strong>
+                            将显示器垫高至视线平齐；采用“下巴回收”动作（Double Chin）进行深层颈屈肌训练。
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-card fade-up">
+                    <div class="problem-header">
+                        <h3>视觉性偏转</h3>
+                        <span class="tag">习惯性</span>
+                    </div>
+                    <p>由于长期单侧用眼或双屏办公导致的面部/颈部不对称。</p>
+                    <div class="details">
+                        <div class="detail-block">
+                            <strong>Daily Cause / 日常诱因</strong>
+                            工位布局不合理，长期单侧咀嚼，斜视屏幕。
+                        </div>
+                        <div class="detail-block">
+                            <strong>Correction / 修正建议</strong>
+                            调整主辅屏位置至正前方；定期进行眼球米字操；左右手交替使用鼠标/手机。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="torso" class="guide-content">
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h3>上交叉综合症 (圆肩)</h3>
+                        <span class="tag">高频问题</span>
+                    </div>
+                    <p>胸肌紧张导致肩部内扣，背部肌群被拉长无力。</p>
+                    <div class="details">
+                        <div class="detail-block">
+                            <strong>Daily Cause / 日常诱因</strong>
+                            长期伏案打字，双臂前伸，胸椎灵活性受限。
+                        </div>
+                        <div class="detail-block">
+                            <strong>Advice / 建议</strong>
+                            多做开门拉伸（胸小肌放松）；强化菱形肌（W字夹背训练）；使用弹力带进行面拉（Face Pull）。
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h3>功能性高低肩</h3>
+                        <span class="tag">结构性</span>
+                    </div>
+                    <p>非病理性的侧弯，常表现为一侧肩部耸起，衣服吊带易滑落。</p>
+                    <div class="details">
+                        <div class="detail-block">
+                            <strong>Daily Cause / 日常诱因</strong>
+                            长期单肩背包，习惯性单侧托腮，睡觉习惯侧卧一侧。
+                        </div>
+                        <div class="detail-block">
+                            <strong>Advice / 建议</strong>
+                            避免二郎腿；单肩包改为双肩包；加强核心肌群两侧的平衡性，进行侧支撑训练。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="lower" class="guide-content">
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h3>骨盆前倾</h3>
+                        <span class="tag">伪翘臀</span>
+                    </div>
+                    <p>腹部突出，腰椎压力过大，久站后腰痛明显，睡觉平躺腰部悬空。</p>
+                    <div class="details">
+                        <div class="detail-block">
+                            <strong>Daily Cause / 日常诱因</strong>
+                            久坐导致髂腰肌缩短紧张，腹肌无力。
+                        </div>
+                        <div class="detail-block">
+                            <strong>Training / 训练方向</strong>
+                            拉伸髂腰肌（弓步拉伸）；强化腹直肌（死虫式）与臀大肌（臀桥）；平时注意收紧核心。
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <h3>足弓塌陷 (扁平足)</h3>
+                        <span class="tag">根基问题</span>
+                    </div>
+                    <p>足弓失去弹性，导致膝盖内扣（X型腿）及步态异常。</p>
+                    <div class="details">
+                        <div class="detail-block">
+                            <strong>Daily / 日常注意</strong>
+                            避免穿底过软的鞋子；过度肥胖会增加足底压力。
+                        </div>
+                        <div class="detail-block">
+                            <strong>Correction / 修正建议</strong>
+                            尝试赤足在沙地/草地行走；进行“抓毛巾”训练激活足底肌群；练习单腿站立平衡。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content"><div class="footer-info"><h4>体态哲思</h4></div></div>
+        <div class="copyright">&copy; 2025 Posture & Lifestyle Project.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

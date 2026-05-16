@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>互动分析 | Analysis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div><div class="cursor-outline"></div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+                <div class="logo-text">体态哲思<span>Posture & Life</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="culture.html">体态文化</a></li>
+                    <li><a href="lifestyle.html">生活方式指南</a></li>
+                    <li><a href="analysis.html" class="active">互动分析</a></li>
+                    <li><a href="about.html">关于项目</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <div class="section-header fade-up">
+            <h2>体态倾向评估</h2>
+            <p>Self-Assessment</p>
+        </div>
+
+        <div class="quiz-container fade-up">
+            <form id="quizForm">
+                <div class="question-item">
+                    <div class="question-title">01. 你的每日屏幕使用时间（电脑+手机）通常是？</div>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="1"> 少于4小时</label>
+                        <label><input type="radio" name="q1" value="2"> 4-8小时</label>
+                        <label><input type="radio" name="q1" value="3"> 8小时以上</label>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">02. 自然放松站立时，你的手掌心朝向？</div>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="1"> 掌心相对（朝向身体）</label>
+                        <label><input type="radio" name="q2" value="3"> 掌心朝后（手背朝前，圆肩迹象）</label>
+                    </div>
+                </div>
+
+                <div class="question-item">
+                    <div class="question-title">03. 平躺在硬板床时，腰部悬空的空隙？</div>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="1"> 一个手掌厚度</label>
+                        <label><input type="radio" name="q3" value="3"> 一个拳头甚至更多（骨盆前倾迹象）</label>
+                        <label><input type="radio" name="q3" value="2"> 紧贴床面</label>
+                    </div>
+                </div>
+
+                <button type="button" class="btn-submit" onclick="analyzeResult()">生成分析报告</button>
+            </form>
+
+            <div id="result-area"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content"><div class="footer-info"><h4>体态哲思</h4></div></div>
+        <div class="copyright">&copy; 2025 Posture & Lifestyle Project.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
